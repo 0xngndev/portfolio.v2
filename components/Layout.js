@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     html {
-        --primaryColor: #8946FF;
-        --secondaryColor: #39BC9D;
-        --lowOpBlue: rgba(57, 188, 157, 0.53);
-        --black: #393939;
+        --darkPrimary: #5200FF;
+        --darkSecondary: #D6D6D6;
+        --darkTerciary: #7E7E7E
+        --darkBackground: #0E1212
         --grey: #3A3A3A;
         --gray: var(--grey);
         --lightGrey: #e1e1e1;
@@ -15,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
         --maxWidth: 1000px;
         --bs: 7px 12px 24px 0 rgba(0,0,0,0.19);
 		font-size: 62.5%; 
+        
     }
     *, *:before, *:after {
         box-sizing: inherit;
@@ -24,11 +25,13 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
         font-size: 1.5rem;
-        line-height: 2
+        line-height: 2;
+        background: #0E1212;
     }
+
     a {
         text-decoration: none;
-        color: var(--black);
+        color: var(--darkSecondary);
     }
     a:hover {
         text-decoration: underline;
@@ -36,11 +39,16 @@ export const GlobalStyles = createGlobalStyle`
     button {
         font-family: 'Poppins',--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+
+    h1 {
+        color: #7E7E7E;
+    }
 `;
 
 const Layout = ({ children }) => {
   return (
     <div>
+      <GlobalStyles />
       <h1>Hello</h1>
       {children}
     </div>
