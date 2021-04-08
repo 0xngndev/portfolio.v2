@@ -47,11 +47,10 @@ export const GlobalStyles = createGlobalStyle`
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <GlobalStyles />
-      <h1>Hello</h1>
       {children}
-    </div>
+    </>
   );
 };
 
