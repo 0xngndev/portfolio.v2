@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
+import Link from "next/link";
 
 const NavContainer = styled.nav`
   display: flex;
@@ -18,7 +19,7 @@ const NavContainer = styled.nav`
       color: var(--darkPrimary);
       font-weight: 500;
       font-size: 1.2rem;
-      padding-right: 2rem;
+      padding-right: 3rem;
       cursor: pointer;
 
       span {
@@ -30,7 +31,7 @@ const NavContainer = styled.nav`
     div {
       width: 1px;
       background: var(--darkPrimary);
-      margin-right: 2rem;
+      margin-right: 3rem;
     }
     svg {
       display: flex;
@@ -39,7 +40,13 @@ const NavContainer = styled.nav`
       height: 30px;
       fill: var(--darkPrimary);
       cursor: pointer;
-      padding-right: 2rem;
+      padding-right: 3rem;
+      transition: 0.3s;
+
+      &:hover {
+        transition: 0.3s;
+        fill: #fff;
+      }
     }
   }
 
@@ -53,15 +60,22 @@ const NavContainer = styled.nav`
       display: flex;
       flex-direction: row;
       text-decoration: none;
+      margin: 0;
+      padding: 0;
 
       li {
         text-decoration: none;
         list-style-type: none;
+
+        .h1-first {
+          padding-left: 0;
+        }
+
         h3 {
           color: var(--darkPrimary);
           font-weight: 500;
           font-size: 1.2rem;
-          padding-left: 2rem;
+          padding-left: 3rem;
           cursor: pointer;
 
           span {
@@ -83,13 +97,17 @@ const Navbar = () => {
           0.0.<span>G</span>
         </h3>
         <div></div>
-        <FaGithub />
-        <AiFillLinkedin />
+        <Link href="https://github.com/nasgui">
+          <FaGithub />
+        </Link>
+        <Link href="https://www.linkedin.com/in/guido-nasini/">
+          <AiFillLinkedin />
+        </Link>
       </div>
       <div className="div-second-half">
         <ul>
           <li>
-            <h3>
+            <h3 className="h1-first">
               0.1.
               <span>Home</span>
             </h3>
