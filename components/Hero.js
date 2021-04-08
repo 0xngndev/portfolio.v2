@@ -26,7 +26,7 @@ const HeroWrapper = styled.div`
       margin-bottom: 2rem;
 
       span {
-        color: var(--darkSecondary);
+        color: #fff;
       }
     }
     h3 {

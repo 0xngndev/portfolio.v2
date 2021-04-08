@@ -4,6 +4,97 @@ import { BiLinkExternal } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 import { FiArrowRightCircle } from "react-icons/fi";
 
+const ProjectsWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  padding: 0 15.5rem;
+  align-items: flex-start;
+
+  h1 {
+    display: flex;
+    color: var(--darkPrimary);
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 6.4rem;
+
+    span {
+      color: #fff;
+    }
+  }
+  div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .div-projects-fh {
+    display: flex;
+    flex-direction: column;
+
+    .div-img {
+      border: 2px solid var(--darkPrimary);
+      width: 70rem;
+      height: 38rem;
+      flex: 1;
+    }
+
+    .div-svg {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      svg {
+        padding-top: 2rem;
+        padding-left: 3rem;
+        fill: var(--darkPrimary);
+        height: 35px;
+        width: 35px;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .div-projects-sh {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3.6rem;
+      align-self: flex-start;
+    }
+
+    h2 {
+      color: var(--darkSecondary);
+      font-weight: 300;
+      font-size: 2.4rem;
+      margin: 0;
+    }
+
+    .div-fake {
+      position: relative;
+      width: 250%;
+      padding: 1rem;
+      height: 10rem;
+
+      .div-description {
+        position: absolute;
+        background-color: #101234;
+        padding: 1rem;
+        z-index: 3;
+        left: 0;
+
+        h3 {
+          color: #fff;
+          font-weight: 400;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+`;
+
 const Projects = () => {
   return (
     <ProjectsWrapper>
@@ -11,24 +102,20 @@ const Projects = () => {
         0.2.<span>Projects</span>
       </h1>
       <div>
-        <div className="div-projects-fh">
-          <div></div>
-          <FaGithub />
-          <BiLinkExternal />
-          <FiArrowRightCircle />
-        </div>
         <div className="div-projects-sh">
           <h1>
             {`() => 500`}
             <span>Tales</span>
           </h1>
           <h2>Social Media App</h2>
-          <div className="div-description">
-            <h3>
-              500Tales is a social media app dedicated to the art of short
-              fiction. Users can share tales up to 500 words long, follow other
-              authors, comment on the stories of others and much more.
-            </h3>
+          <div className="div-fake">
+            <div className="div-description">
+              <h3>
+                500Tales is a social media app dedicated to the art of short
+                fiction. Users can share tales up to 500 words long, follow
+                other authors, comment on the stories of others and much more.
+              </h3>
+            </div>
           </div>
           <p>
             {`<`}
@@ -40,6 +127,14 @@ const Projects = () => {
             <button>NEXTJS</button>
             <button>MONGODB</button>
             <button>NODE</button>
+          </div>
+        </div>
+        <div className="div-projects-fh">
+          <div className="div-img"></div>
+          <div className="div-svg">
+            <FaGithub />
+            <BiLinkExternal />
+            <FiArrowRightCircle />
           </div>
         </div>
       </div>
