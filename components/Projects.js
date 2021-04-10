@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Image from "next/image";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 import { FiArrowRightCircle } from "react-icons/fi";
@@ -11,8 +11,7 @@ const ProjectsWrapper = styled.section`
   align-items: flex-start;
 
   h1 {
-    display: block;
-
+    display: flex;
     color: var(--darkPrimary);
     align-self: flex-end;
     font-weight: 700;
@@ -33,12 +32,31 @@ const ProjectsWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex: 1.5;
 
     .div-img {
-      border: 2px solid var(--darkPrimary);
-      width: 70rem;
-      height: 38rem;
+      position: relative;
+      z-index: 1;
       flex: 1;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--darkPrimary);
+        opacity: 0.8;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        transition: 0.5s;
+        :after {
+          opacity: 0;
+        }
+      }
     }
 
     .div-svg {
@@ -85,7 +103,7 @@ const ProjectsWrapper = styled.section`
       position: relative;
       padding: 1.5rem;
       z-index: 2;
-      width: 160%;
+      width: 130%;
       background: #101234;
       box-shadow: var(--bs);
 
@@ -156,7 +174,9 @@ const Projects = () => {
           </div>
         </div>
         <div className="div-projects-fh">
-          <div className="div-img"></div>
+          <div className="div-img">
+            <Image src="/assets/sloth.jpg" alt="sloth" layout="fill" />
+          </div>
           <div className="div-svg">
             <FaGithub />
             <BiLinkExternal />
