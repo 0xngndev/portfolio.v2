@@ -8,15 +8,15 @@ import { FiArrowRightCircle } from "react-icons/fi";
 const DivProjectWrapper = styled.div`
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 100%;
-  padding-right: 2rem;
+
   margin-bottom: 15rem;
 
   .div-projects-fh {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     flex: 1.5;
 
     .div-img {
@@ -45,21 +45,25 @@ const DivProjectWrapper = styled.div`
           opacity: 0;
         }
       }
+      img {
+        object-fit: cover;
+        object-position: center center;
+      }
     }
 
     .div-svg {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: flex-start;
       cursor: pointer;
 
       svg {
         padding-top: 2rem;
-        padding-left: 3rem;
+        padding-right: 3rem;
         fill: var(--darkPrimary);
         height: 35px;
         width: 35px;
-        align-self: flex-end;
+        align-self: flex-start;
         transition: 0.3s;
         border: none;
 
@@ -80,7 +84,7 @@ const DivProjectWrapper = styled.div`
       display: block;
       font-weight: 700;
       font-size: 2.5rem;
-      align-self: flex-start;
+      text-align: end;
       margin: 0;
       margin-bottom: 1rem;
       line-height: 1;
@@ -92,12 +96,14 @@ const DivProjectWrapper = styled.div`
       font-weight: 300;
       font-size: 2rem;
       margin: 0;
+      text-align: end;
       margin-bottom: 1rem;
     }
 
     .div-fake {
       position: relative;
       padding: 1.5rem;
+      right: calc(30% + 2.5rem);
       z-index: 2;
       width: 130%;
       background: #101234;
@@ -112,6 +118,8 @@ const DivProjectWrapper = styled.div`
     }
     p {
       display: block;
+      text-align: end;
+      font-size: 1.75rem;
 
       color: var(--darkPrimary);
 
@@ -122,6 +130,8 @@ const DivProjectWrapper = styled.div`
     .div-tech-stack {
       display: flex;
       flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
 
       button {
         outline: none;
@@ -131,7 +141,7 @@ const DivProjectWrapper = styled.div`
         color: #fff;
         border: 2px solid var(--darkPrimary);
         font-size: 1.5rem;
-        margin-right: 2rem;
+        margin-left: 2rem;
       }
     }
   }
@@ -142,15 +152,16 @@ const Productivia = () => {
     <DivProjectWrapper>
       <div className="div-projects-sh">
         <h1 className="project-title">
-          {`() => 500`}
-          <span>Tales</span>
+          {`() => Pro`}
+          <span>ductivia</span>
         </h1>
-        <h2>Social Media App</h2>
+        <h2>Productivity App</h2>
         <div className="div-fake">
           <h3>
-            500Tales is a social media app dedicated to the art of short
-            fiction. Users can share tales up to 500 words long, follow other
-            authors, comment on the stories of others and much more.
+            Productivia is the first web app I built. It is a
+            productivity-oriented app focused on maximizing productivity by
+            providing the users with proven tools like flashcards, to-do lists
+            ,and pomodoro clocks in a clean and cluter-free environment.
           </h3>
         </div>
         <p>
@@ -159,10 +170,9 @@ const Productivia = () => {
           {`>`}
         </p>
         <div className="div-tech-stack">
-          <button>GRAPHQL</button>
-          <button>NEXTJS</button>
-          <button>MONGODB</button>
-          <button>NODE</button>
+          <button>REACT</button>
+          <button>REDUX</button>
+          <button>FIREBASE</button>
         </div>
       </div>
       <div className="div-projects-fh">

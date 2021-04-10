@@ -45,6 +45,10 @@ const DivProjectWrapper = styled.div`
           opacity: 0;
         }
       }
+      img {
+        object-fit: cover;
+        object-position: center center;
+      }
     }
 
     .div-svg {
@@ -112,7 +116,7 @@ const DivProjectWrapper = styled.div`
     }
     p {
       display: block;
-
+      font-size: 1.75rem;
       color: var(--darkPrimary);
 
       span {
