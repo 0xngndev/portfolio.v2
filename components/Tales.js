@@ -11,7 +11,6 @@ const DivProjectWrapper = styled.div`
   flex-direction: row;
   width: 100%;
   padding-right: 2rem;
-  margin-bottom: 15rem;
 
   .div-projects-fh {
     display: flex;
