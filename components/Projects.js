@@ -11,7 +11,8 @@ const ProjectsWrapper = styled.section`
   align-items: flex-start;
 
   h1 {
-    display: flex;
+    display: block;
+
     color: var(--darkPrimary);
     align-self: flex-end;
     font-weight: 700;
@@ -25,11 +26,13 @@ const ProjectsWrapper = styled.section`
     position: relative;
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
   .div-projects-fh {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 
     .div-img {
       border: 2px solid var(--darkPrimary);
@@ -60,36 +63,61 @@ const ProjectsWrapper = styled.section`
     flex: 1;
 
     h1 {
+      display: block;
       font-weight: 700;
-      font-size: 3.6rem;
+      font-size: 2.5rem;
       align-self: flex-start;
+      margin: 0;
+      margin-bottom: 1rem;
+      line-height: 1;
     }
 
     h2 {
+      display: block;
       color: var(--darkSecondary);
       font-weight: 300;
-      font-size: 2.4rem;
+      font-size: 2rem;
       margin: 0;
+      margin-bottom: 1rem;
     }
 
     .div-fake {
       position: relative;
-      width: 250%;
-      padding: 1rem;
-      height: 10rem;
+      padding: 1.5rem;
+      z-index: 2;
+      width: 160%;
+      background: #101234;
+      box-shadow: var(--bs);
 
-      .div-description {
-        position: absolute;
-        background-color: #101234;
+      h3 {
+        display: block;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      display: block;
+
+      color: var(--darkPrimary);
+
+      span {
+        color: #fff;
+      }
+    }
+    .div-tech-stack {
+      display: flex;
+      flex-direction: row;
+
+      button {
+        outline: none;
+        border: none;
+        background: transparent;
         padding: 1rem;
-        z-index: 3;
-        left: 0;
-
-        h3 {
-          color: #fff;
-          font-weight: 400;
-          font-size: 1.8rem;
-        }
+        color: #fff;
+        border: 2px solid var(--darkPrimary);
+        font-size: 1.5rem;
+        margin-right: 2rem;
       }
     }
   }
@@ -109,13 +137,11 @@ const Projects = () => {
           </h1>
           <h2>Social Media App</h2>
           <div className="div-fake">
-            <div className="div-description">
-              <h3>
-                500Tales is a social media app dedicated to the art of short
-                fiction. Users can share tales up to 500 words long, follow
-                other authors, comment on the stories of others and much more.
-              </h3>
-            </div>
+            <h3>
+              500Tales is a social media app dedicated to the art of short
+              fiction. Users can share tales up to 500 words long, follow other
+              authors, comment on the stories of others and much more.
+            </h3>
           </div>
           <p>
             {`<`}
