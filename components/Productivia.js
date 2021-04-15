@@ -186,7 +186,7 @@ const Productivia = () => {
           <Link href="/">
             <BiLinkExternal />
           </Link>
-          <Link href="/">
+          <Link href="/projects/productivia">
             <FiArrowRightCircle />
           </Link>
         </div>

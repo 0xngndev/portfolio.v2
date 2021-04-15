@@ -179,7 +179,7 @@ const Tales = () => {
           <Link href="/">
             <BiLinkExternal />
           </Link>
-          <Link href="/">
+          <Link href="/projects/tales">
             <FiArrowRightCircle />
           </Link>
         </div>
