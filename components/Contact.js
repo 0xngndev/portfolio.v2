@@ -1,24 +1,77 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const ContactWrapper = styled.section`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   padding: 0 15.5rem;
   align-items: center;
 
   .div-img-left {
-    display: grid;
-    grid-column: 1/6;
+    display: flex;
+    flex: 1;
   }
 
   .div-content-right {
-    display: grid;
-    grid-column: 6/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    label {
+      display: flex;
+      width: 100%;
+      margin-bottom: 3rem;
+      justify-content: center;
+
+      input {
+        outline: none;
+        border: none;
+        height: 15px;
+        border: 2px solid var(--darkPrimary);
+        background: transparent;
+        font-family: "Roboto Mono";
+        color: #fff;
+        padding-left: 0.5rem;
+
+        input > placeholder {
+          color: #fff;
+        }
+      }
+    }
+
+    button {
+      outline: none;
+      border: none;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      color: var(--darkPrimary);
+      border: 2px solid var(--darkPrimary);
+    }
   }
 `;
 
 const Contact = () => {
+  const [inputs, setInputs] = useState({
+    email: "",
+    subject: "",
+    body: "",
+  });
+
+  const handleChange = (e) => {
+    let { value, name } = e.target;
+
+    setInputs({
+      ...inputs,
+      [name]: value,
+    });
+  };
+
+  const { email, subject, body } = inputs;
+
   return (
     <ContactWrapper>
       <div className="div-img-left">
