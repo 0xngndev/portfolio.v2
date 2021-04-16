@@ -15,20 +15,35 @@ const Title = styled.h1`
 `;
 
 const ContactWrapper = styled.section`
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 15.5rem;
+  margin: 0 20.5rem;
   align-items: center;
-
+  position: relative;
   border: 2px solid var(--darkPrimary);
 
   .div-img-left {
     display: flex;
-    flex: 0.5;
-    padding: 3rem;
+    flex: 1 1 1;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-right: 2px solid var(--darkPrimary);
+    }
   }
 
   .div-content-right {
@@ -36,8 +51,8 @@ const ContactWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
-    flex: 1;
+    padding: 4rem 8rem;
+    flex: 1 1 1;
     width: 100%;
     border-left: 2px solid var(--darkPrimary);
 
@@ -116,8 +131,9 @@ const Contact = () => {
       </Title>
       <ContactWrapper>
         <div className="div-img-left">
-          <Image src="/assets/dev.svg" alt="planet" width={300} height={300} />
+          <img src="/assets/mrceroilu.jpg" alt="message" />
         </div>
+
         <div className="div-content-right">
           <form>
             <label htmlFor="email">
@@ -125,7 +141,6 @@ const Contact = () => {
               <input
                 type="text"
                 name="email"
-                placeholder="Email Address"
                 value={email}
                 onChange={handleChange}
               ></input>
@@ -135,7 +150,6 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
-                placeholder="Subject"
                 value={subject}
                 onChange={handleChange}
               ></input>
@@ -146,7 +160,6 @@ const Contact = () => {
                 className="text-area"
                 type="textarea"
                 name="body"
-                placeholder="Message"
                 value={body}
                 onChange={handleChange}
               ></textarea>
