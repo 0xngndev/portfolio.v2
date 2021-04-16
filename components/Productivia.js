@@ -20,12 +20,25 @@ const DivProjectWrapper = styled.div`
     flex: 1.5;
 
     .div-img {
+      position: relative;
       display: flex;
       position: relative;
       z-index: 1;
       flex: 1;
       width: 100%;
       height: 100%;
+
+      &:before {
+        top: -10px;
+        left: 30px;
+        border: 2px solid var(--darkPrimary);
+
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
 
       &:after {
         content: "";
@@ -48,6 +61,7 @@ const DivProjectWrapper = styled.div`
       img {
         object-fit: cover;
         object-position: center center;
+        box-shadow: var(--bs);
       }
     }
 
