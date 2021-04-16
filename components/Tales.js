@@ -184,7 +184,7 @@ const Tales = () => {
       </div>
       <div className="div-projects-fh">
         <div className="div-img">
-          <Image src="/assets/5tales.jpg" alt="500tales" layout="fill" />
+          <Image src="/assets/5tales.png" alt="500tales" layout="fill" />
         </div>
         <div className="div-svg">
           <Link href="https://github.com/nasgui">
@@ -193,9 +193,9 @@ const Tales = () => {
           <Link href="/">
             <BiLinkExternal />
           </Link>
-          <Link href="/projects/tales">
+          {/* <Link href="/projects/tales">
             <FiArrowRightCircle />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </DivProjectWrapper>

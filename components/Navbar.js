@@ -4,6 +4,11 @@ import { AiFillLinkedin } from "react-icons/ai";
 import Link from "next/link";
 
 const NavContainer = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: var(--bs);
+  background-color: #0e1212;
   display: flex;
   flex-direction: row;
   align-items: center;
