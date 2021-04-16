@@ -8,6 +8,7 @@ const ProjectsWrapper = styled.section`
   flex-direction: column;
   padding: 0 15.5rem;
   align-items: flex-start;
+  margin-top: 13rem;
 
   h1 {
     display: flex;
@@ -32,7 +33,7 @@ const ProjectsWrapper = styled.section`
     width: 50%;
 
     &:before {
-      content: "<0.2.5>";
+      content: "<0.3.5>";
       position: relative;
       color: var(--darkPrimary);
       font-weight: 400;
@@ -46,7 +47,7 @@ const Projects = () => {
   return (
     <ProjectsWrapper>
       <h1>
-        0.2.<span>Projects</span>
+        0.3.<span>Projects</span>
       </h1>
       <Tales />
       <div className="separator"></div>

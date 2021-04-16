@@ -28,11 +28,11 @@ const AboutWrapper = styled.section`
 
   p {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--darkPrimary);
     span {
       font-weight: 400;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #fff;
     }
   }
@@ -55,7 +55,7 @@ const About = () => {
   return (
     <AboutWrapper>
       <h1>
-        0.3.<span>About</span>
+        0.2.<span>About</span>
       </h1>
       <div className="div-spacer"></div>
       <p className="p-first">ATTRIBUTES</p>
