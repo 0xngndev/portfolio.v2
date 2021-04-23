@@ -7,6 +7,10 @@ const AboutWrapper = styled.section`
   padding: 0 15.5rem;
   align-items: flex-start;
 
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
   h1 {
     color: var(--darkPrimary);
     font-weight: 700;
@@ -34,6 +38,10 @@ const AboutWrapper = styled.section`
       font-weight: 400;
       font-size: 1.5rem;
       color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
     }
   }
 
