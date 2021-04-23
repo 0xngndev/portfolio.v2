@@ -12,6 +12,11 @@ const Title = styled.h1`
   span {
     color: #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    font-size: 4rem;
+  }
 `;
 
 const ContactWrapper = styled.section`

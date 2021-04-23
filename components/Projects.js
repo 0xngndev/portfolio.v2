@@ -9,6 +9,10 @@ const ProjectsWrapper = styled.section`
   padding: 0 15.5rem;
   align-items: flex-start;
   margin-top: 13rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+  }
 
   h1 {
     display: flex;
@@ -18,6 +22,12 @@ const ProjectsWrapper = styled.section`
     font-weight: 700;
     font-size: 6.4rem;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      font-size: 5rem;
+      justify-content: center;
+      align-self: center;
+    }
 
     span {
       color: #fff;

@@ -9,7 +9,7 @@ const HeroWrapper = styled.div`
   align-items: center;
   height: calc(100vh - 120px);
   @media screen and (max-width: 768px) {
-    padding: 0 5rem;
+    padding: 0;
     width: 100%;
   }
 
