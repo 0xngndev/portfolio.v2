@@ -8,6 +8,10 @@ const HeroWrapper = styled.div`
   padding: 0 15.5rem;
   align-items: center;
   height: calc(100vh - 120px);
+  @media screen and (max-width: 768px) {
+    padding: 0 5rem;
+    width: 100%;
+  }
 
   .div-hero-fh {
     display: flex;
@@ -25,6 +29,10 @@ const HeroWrapper = styled.div`
       line-height: 4rem;
       margin-bottom: 2rem;
 
+      @media screen and (max-width: 768px) {
+        line-height: 1.2;
+      }
+
       span {
         color: #fff;
       }
@@ -36,6 +44,10 @@ const HeroWrapper = styled.div`
       margin: 0;
       line-height: 3rem;
       padding-bottom: 2rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.75rem;
+      }
     }
     h2 {
       font-size: 1.5rem;
@@ -45,6 +57,10 @@ const HeroWrapper = styled.div`
       line-height: 3rem;
       padding-bottom: 3rem;
       max-width: 90%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.75rem;
+      }
     }
     p {
       font-size: 1.5rem;
@@ -53,6 +69,9 @@ const HeroWrapper = styled.div`
       line-height: 3rem;
       margin: 0;
       padding-bottom: 3rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1.75rem;
+      }
     }
 
     div {
@@ -73,6 +92,10 @@ const HeroWrapper = styled.div`
         cursor: pointer;
         transition: 0.3s;
 
+        @media screen and (max-width: 768px) {
+          padding: 1rem 2.5rem;
+        }
+
         &:hover {
           transition: 0.3s;
           transform: translateY(-10px);
@@ -87,6 +110,9 @@ const HeroWrapper = styled.div`
     justify-content: center;
     align-items: flex-end;
     flex: 1;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 
     img {
       opacity: 0.9;
