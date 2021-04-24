@@ -68,11 +68,16 @@ const HeroWrapper = styled.div`
     }
     p {
       font-size: 1.5rem;
-      color: var(--darkSecondary);
+      color: var(--darkPrimary);
       font-weight: 500;
       line-height: 3rem;
       margin: 0;
       padding-bottom: 3rem;
+
+      span {
+        color: #fff;
+      }
+
       @media screen and (max-width: 768px) {
         font-size: 1.4rem;
       }
@@ -83,6 +88,11 @@ const HeroWrapper = styled.div`
       flex-direction: row;
       justify-content: space-between;
       max-width: 95%;
+
+      @media screen and (max-width: 1287px) {
+        justify-content: flex-start;
+      }
+
       @media screen and (max-width: 768px) {
         justify-content: flex-start;
       }
@@ -98,8 +108,9 @@ const HeroWrapper = styled.div`
         text-transform: uppercase;
         cursor: pointer;
         transition: 0.3s;
+        color: #fff;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1287px) {
           padding: 1rem 2.5rem;
           margin-right: 1rem;
         }
@@ -122,6 +133,10 @@ const HeroWrapper = styled.div`
     justify-content: center;
     align-items: flex-end;
     flex: 1;
+
+    @media screen and (max-width: 1196px) {
+      display: none;
+    }
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -144,7 +159,11 @@ const Hero = () => {
           I’m a Fullstack Developer based on Argentina who loves creating clean
           and intuitive web apps.
         </h2>
-        <p>{`<choose your path>`}</p>
+        <p>
+          {`<`}
+          <span>choose your path</span>
+          {`>`}
+        </p>
         <div>
           <button type="button">Projects</button>
           <button type="button">About me</button>

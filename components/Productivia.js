@@ -130,7 +130,7 @@ const DivProjectWrapper = styled.div`
         display: flex;
         position: absolute;
         top: -12%;
-        left: 30%;
+        left: 50%;
         transform: translate(-50%, -50%);
         font-size: 2rem;
         z-index: 3;
@@ -188,7 +188,7 @@ const DivProjectWrapper = styled.div`
 
       @media screen and (max-width: 768px) {
         position: absolute;
-        bottom: 27.5%;
+        bottom: 28.5%;
         left: 50%;
         color: #fff;
         padding: 0 1rem;

@@ -12,7 +12,7 @@ const DivProjectWrapper = styled.div`
   width: 100%;
   padding-right: 2rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1173px) {
     padding: 0;
   }
 
@@ -22,7 +22,7 @@ const DivProjectWrapper = styled.div`
     align-items: flex-end;
     flex: 1.5;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1173px) {
       padding: 0 5rem;
       height: 350px;
     }
@@ -59,7 +59,7 @@ const DivProjectWrapper = styled.div`
         opacity: 0.8;
         transition: 0.5s;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1173px) {
           background: #101234;
         }
       }
@@ -93,7 +93,7 @@ const DivProjectWrapper = styled.div`
         transition: 0.3s;
         border: none;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1173px) {
           padding-top: 3rem;
           height: 30px;
           width: 30px;
@@ -112,7 +112,7 @@ const DivProjectWrapper = styled.div`
     flex-direction: column;
     flex: 1;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1173px) {
       position: absolute;
       height: 100%;
     }
@@ -126,11 +126,11 @@ const DivProjectWrapper = styled.div`
       margin-bottom: 1rem;
       line-height: 1;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1173px) {
         display: flex;
         position: absolute;
-        top: -7%;
-        left: 30%;
+        top: -10%;
+        left: 50%;
         transform: translate(-50%, -50%);
         font-size: 2rem;
         z-index: 3;
@@ -145,7 +145,7 @@ const DivProjectWrapper = styled.div`
       margin: 0;
       margin-bottom: 1rem;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1173px) {
         display: none;
       }
     }
@@ -158,7 +158,7 @@ const DivProjectWrapper = styled.div`
       background: #101234;
       box-shadow: var(--bs);
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1173px) {
         width: 80%;
         top: 35%;
         left: 50%;
@@ -172,7 +172,7 @@ const DivProjectWrapper = styled.div`
         font-weight: 400;
         font-size: 1.5rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1173px) {
           font-size: 1.25rem;
         }
       }
@@ -181,9 +181,9 @@ const DivProjectWrapper = styled.div`
       display: block;
       font-size: 1.75rem;
       color: var(--darkPrimary);
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1173px) {
         position: absolute;
-        bottom: 27.5%;
+        bottom: 28.5%;
         left: 50%;
         color: #fff;
         padding: 0 1rem;
@@ -202,7 +202,7 @@ const DivProjectWrapper = styled.div`
       display: flex;
       flex-direction: row;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1173px) {
         position: absolute;
         bottom: 15%;
         left: 50%;
@@ -221,7 +221,7 @@ const DivProjectWrapper = styled.div`
         font-size: 1.5rem;
         margin-right: 2rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1173px) {
           background: #101234;
           font-size: 1.25rem;
           margin-right: 1rem;
