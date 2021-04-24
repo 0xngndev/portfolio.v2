@@ -22,6 +22,10 @@ const HeroWrapper = styled.div`
     flex: 1.3;
     border-left: 2px solid var(--darkPrimary);
 
+    @media screen and (max-width: 768px) {
+      border-left: none;
+    }
+
     h1 {
       color: var(--darkPrimary);
       font-size: 5rem;
@@ -46,7 +50,7 @@ const HeroWrapper = styled.div`
       padding-bottom: 2rem;
 
       @media screen and (max-width: 768px) {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
       }
     }
     h2 {
@@ -59,7 +63,7 @@ const HeroWrapper = styled.div`
       max-width: 90%;
 
       @media screen and (max-width: 768px) {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
       }
     }
     p {
@@ -70,7 +74,7 @@ const HeroWrapper = styled.div`
       margin: 0;
       padding-bottom: 3rem;
       @media screen and (max-width: 768px) {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -79,6 +83,9 @@ const HeroWrapper = styled.div`
       flex-direction: row;
       justify-content: space-between;
       max-width: 95%;
+      @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+      }
 
       button {
         border: none;
@@ -94,6 +101,11 @@ const HeroWrapper = styled.div`
 
         @media screen and (max-width: 768px) {
           padding: 1rem 2.5rem;
+          margin-right: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 0.75rem 1.5rem;
         }
 
         &:hover {

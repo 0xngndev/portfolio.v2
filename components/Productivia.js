@@ -95,7 +95,6 @@ const DivProjectWrapper = styled.div`
         border: none;
 
         @media screen and (max-width: 768px) {
-          padding-top: 3rem;
           height: 30px;
           width: 30px;
         }
@@ -130,7 +129,7 @@ const DivProjectWrapper = styled.div`
       @media screen and (max-width: 768px) {
         display: flex;
         position: absolute;
-        top: -7%;
+        top: -12%;
         left: 30%;
         transform: translate(-50%, -50%);
         font-size: 2rem;
