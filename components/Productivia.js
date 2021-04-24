@@ -13,11 +13,20 @@ const DivProjectWrapper = styled.div`
 
   margin-bottom: 15rem;
 
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+
   .div-projects-fh {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex: 1.5;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 5rem;
+      height: 350px;
+    }
 
     .div-img {
       position: relative;
@@ -50,6 +59,10 @@ const DivProjectWrapper = styled.div`
         background: var(--darkPrimary);
         opacity: 0.8;
         transition: 0.5s;
+
+        @media screen and (max-width: 768px) {
+          background: #101234;
+        }
       }
 
       &:hover {
@@ -81,6 +94,12 @@ const DivProjectWrapper = styled.div`
         transition: 0.3s;
         border: none;
 
+        @media screen and (max-width: 768px) {
+          padding-top: 3rem;
+          height: 30px;
+          width: 30px;
+        }
+
         &:hover {
           transition: 0.3s;
           fill: #fff;
@@ -94,6 +113,11 @@ const DivProjectWrapper = styled.div`
     flex-direction: column;
     flex: 1;
 
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      height: 100%;
+    }
+
     .project-title {
       display: block;
       font-weight: 700;
@@ -102,6 +126,16 @@ const DivProjectWrapper = styled.div`
       margin: 0;
       margin-bottom: 1rem;
       line-height: 1;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        position: absolute;
+        top: -7%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        z-index: 3;
+      }
     }
 
     h2 {
@@ -112,6 +146,10 @@ const DivProjectWrapper = styled.div`
       margin: 0;
       text-align: end;
       margin-bottom: 1rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     .div-fake {
@@ -123,11 +161,23 @@ const DivProjectWrapper = styled.div`
       background: #101234;
       box-shadow: var(--bs);
 
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+        z-index: 3;
+      }
+
       h3 {
         display: block;
         color: #fff;
         font-weight: 400;
         font-size: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.25rem;
+        }
       }
     }
     p {
@@ -136,6 +186,19 @@ const DivProjectWrapper = styled.div`
       font-size: 1.75rem;
 
       color: var(--darkPrimary);
+
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 27.5%;
+        left: 50%;
+        color: #fff;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        background: var(--darkPrimary);
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        box-shadow: var(--bs);
+      }
 
       span {
         color: #fff;
@@ -147,6 +210,15 @@ const DivProjectWrapper = styled.div`
       align-items: flex-end;
       justify-content: flex-end;
 
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 3;
+      }
+
       button {
         outline: none;
         border: none;
@@ -156,6 +228,14 @@ const DivProjectWrapper = styled.div`
         border: 2px solid var(--darkPrimary);
         font-size: 1.5rem;
         margin-left: 2rem;
+
+        @media screen and (max-width: 768px) {
+          background: #101234;
+          font-size: 1.25rem;
+          margin-right: 1rem;
+          border: none;
+          box-shadow: var(--bs);
+        }
       }
     }
   }
@@ -172,10 +252,10 @@ const Productivia = () => {
         <h2>Productivity App</h2>
         <div className="div-fake">
           <h3>
-            Productivia is the first web app I built. It is a
-            productivity-oriented app focused on maximizing productivity by
-            providing the users with proven tools like flashcards, to-do lists
-            ,and pomodoro clocks in a clean and cluter-free environment.
+            Productivia is a productivity-oriented app focused on maximizing
+            productivity by providing the users with tools such as flashcards,
+            to-do lists, and pomodoro clocks in a clean and cluter-free
+            environment.
           </h3>
         </div>
         <p>

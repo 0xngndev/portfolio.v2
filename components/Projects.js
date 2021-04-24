@@ -27,6 +27,7 @@ const ProjectsWrapper = styled.section`
       font-size: 5rem;
       justify-content: center;
       align-self: center;
+      margin-bottom: 7.5rem;
     }
 
     span {
@@ -41,6 +42,10 @@ const ProjectsWrapper = styled.section`
     background-color: var(--darkPrimary);
     margin: 7.5rem 0;
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      margin: 7.5rem 0 12.5rem 0;
+    }
 
     &:before {
       content: "<0.3.5>";
