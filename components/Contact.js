@@ -15,7 +15,8 @@ const Title = styled.h1`
 
   @media screen and (max-width: 768px) {
     padding: 0;
-    font-size: 4rem;
+    font-size: 5rem;
+    text-align: center;
   }
 `;
 
@@ -28,6 +29,12 @@ const ContactWrapper = styled.section`
   align-items: center;
   position: relative;
   border: 2px solid var(--darkPrimary);
+
+  @media screen and (max-width: 768px) {
+    margin: 0 7rem;
+    padding: 0 2rem;
+    flex-direction: column;
+  }
 
   .div-img-left {
     display: flex;
@@ -48,6 +55,13 @@ const ContactWrapper = styled.section`
       object-fit: cover;
       object-position: center center;
       border-right: 2px solid var(--darkPrimary);
+
+      @media screen and (max-width: 768px) {
+        position: relative;
+        border-right: none;
+        max-width: calc(100% + 4rem);
+        border-bottom: 2px solid var(--darkPrimary);
+      }
     }
   }
 
@@ -60,6 +74,10 @@ const ContactWrapper = styled.section`
     flex: 1 1 1;
     width: 100%;
     border-left: 2px solid var(--darkPrimary);
+
+    @media screen and (max-width: 768px) {
+      border-left: none;
+    }
 
     form {
       width: 100%;
@@ -96,6 +114,7 @@ const ContactWrapper = styled.section`
       height: 25px;
       padding: 0;
       margin: 0;
+      background-color: var(--darkPrimary);
     }
   }
 
