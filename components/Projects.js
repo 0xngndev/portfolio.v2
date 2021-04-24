@@ -45,7 +45,7 @@ const ProjectsWrapper = styled.section`
     align-self: flex-end;
     height: 2px;
     background-color: var(--darkPrimary);
-    margin: 7.5rem 0;
+    margin: 12rem 0;
     width: 50%;
 
     @media screen and (max-width: 768px) {

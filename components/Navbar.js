@@ -49,7 +49,6 @@ const SidebarStyles = styled.div`
         color: var(--darkPrimary);
         font-weight: 500;
         font-size: 3rem;
-        padding-left: 3rem;
         cursor: pointer;
 
         span {
