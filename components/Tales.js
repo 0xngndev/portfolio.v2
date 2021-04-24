@@ -23,11 +23,6 @@ const DivProjectWrapper = styled.div`
     flex: 1.5;
 
     @media screen and (max-width: 768px) {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       padding: 0 5rem;
       height: 350px;
     }
@@ -63,6 +58,10 @@ const DivProjectWrapper = styled.div`
         background: var(--darkPrimary);
         opacity: 0.8;
         transition: 0.5s;
+
+        @media screen and (max-width: 768px) {
+          background: #101234;
+        }
       }
 
       &:hover {
@@ -94,6 +93,12 @@ const DivProjectWrapper = styled.div`
         transition: 0.3s;
         border: none;
 
+        @media screen and (max-width: 768px) {
+          padding-top: 3rem;
+          height: 30px;
+          width: 30px;
+        }
+
         &:hover {
           transition: 0.3s;
           fill: #fff;
@@ -108,6 +113,7 @@ const DivProjectWrapper = styled.div`
     flex: 1;
 
     @media screen and (max-width: 768px) {
+      position: absolute;
       height: 100%;
     }
 
@@ -121,8 +127,11 @@ const DivProjectWrapper = styled.div`
       line-height: 1;
 
       @media screen and (max-width: 768px) {
+        display: flex;
         position: absolute;
-        top: 1rem;
+        top: -7%;
+        left: 30%;
+        transform: translate(-50%, -50%);
         font-size: 2rem;
         z-index: 3;
       }
@@ -137,10 +146,7 @@ const DivProjectWrapper = styled.div`
       margin-bottom: 1rem;
 
       @media screen and (max-width: 768px) {
-        position: absolute;
-        top: 2rem;
-        font-size: 1.5rem;
-        z-index: 3;
+        display: none;
       }
     }
 
@@ -154,8 +160,9 @@ const DivProjectWrapper = styled.div`
 
       @media screen and (max-width: 768px) {
         width: 80%;
-        top: 4rem;
-        left: 4rem;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -65%);
         z-index: 3;
       }
 
@@ -174,6 +181,18 @@ const DivProjectWrapper = styled.div`
       display: block;
       font-size: 1.75rem;
       color: var(--darkPrimary);
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 27.5%;
+        left: 50%;
+        color: #fff;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        background: var(--darkPrimary);
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        box-shadow: var(--bs);
+      }
 
       span {
         color: #fff;
@@ -184,9 +203,11 @@ const DivProjectWrapper = styled.div`
       flex-direction: row;
 
       @media screen and (max-width: 768px) {
-        position: relative;
-        bottom: 0;
-        height: 100%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
         z-index: 3;
       }
 
@@ -205,6 +226,7 @@ const DivProjectWrapper = styled.div`
           font-size: 1.25rem;
           margin-right: 1rem;
           border: none;
+          box-shadow: var(--bs);
         }
       }
     }
