@@ -96,19 +96,24 @@ const NavContainer = styled.nav`
       background: var(--darkPrimary);
       margin-right: 3rem;
     }
-    svg {
+
+    a {
       display: flex;
       align-self: center;
-      width: 30px;
-      height: 30px;
-      fill: var(--darkPrimary);
-      cursor: pointer;
-      padding-right: 3rem;
-      transition: 0.3s;
-
-      &:hover {
+      svg {
+        display: flex;
+        align-self: center;
+        width: 30px;
+        height: 30px;
+        fill: var(--darkPrimary);
+        cursor: pointer;
+        padding-right: 3rem;
         transition: 0.3s;
-        fill: #fff;
+
+        &:hover {
+          transition: 0.3s;
+          fill: #fff;
+        }
       }
     }
   }
@@ -153,14 +158,14 @@ const NavContainer = styled.nav`
         h3 {
           color: var(--darkPrimary);
           font-weight: 500;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding-left: 3rem;
           cursor: pointer;
 
           span {
             color: var(--darkSecondary);
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
           }
         }
       }
@@ -210,12 +215,12 @@ const Navbar = () => {
               0.0.<span>G</span>
             </h3>
             <div></div>
-            <Link href="https://github.com/nasgui">
+            <a href="https://github.com/nasgui">
               <FaGithub />
-            </Link>
-            <Link href="https://www.linkedin.com/in/guido-nasini/">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/guido-nasini/">
               <AiFillLinkedin />
-            </Link>
+            </a>
           </div>
           <div className="div-second-half">
             <GiHamburgerMenu onClick={() => setIsOpen(true)} />

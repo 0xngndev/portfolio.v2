@@ -56,7 +56,7 @@ const HeroWrapper = styled.div`
     h2 {
       font-size: 1.5rem;
       font-weight: 400;
-      color: #7e7e7e;
+      color: #d9d9d9;
       margin: 0;
       line-height: 3rem;
       padding-bottom: 3rem;

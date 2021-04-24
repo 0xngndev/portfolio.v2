@@ -83,25 +83,32 @@ const DivProjectWrapper = styled.div`
       justify-content: flex-end;
       cursor: pointer;
 
-      svg {
-        padding-top: 2rem;
-        padding-left: 3rem;
-        fill: var(--darkPrimary);
-        height: 35px;
-        width: 35px;
+      a {
+        display: flex;
+        justify-content: flex-end;
         align-self: flex-end;
-        transition: 0.3s;
-        border: none;
+        padding-top: 0.5rem;
 
-        @media screen and (max-width: 1173px) {
-          padding-top: 3rem;
-          height: 30px;
-          width: 30px;
-        }
-
-        &:hover {
+        svg {
+          padding-top: 2rem;
+          padding-left: 3rem;
+          fill: var(--darkPrimary);
+          height: 35px;
+          width: 35px;
+          align-self: flex-end;
           transition: 0.3s;
-          fill: #fff;
+          border: none;
+
+          @media screen and (max-width: 1173px) {
+            padding-top: 3rem;
+            height: 30px;
+            width: 30px;
+          }
+
+          &:hover {
+            transition: 0.3s;
+            fill: #fff;
+          }
         }
       }
     }
@@ -266,12 +273,12 @@ const Tales = () => {
           <Image src="/assets/5tales.png" alt="500tales" layout="fill" />
         </div>
         <div className="div-svg">
-          <Link href="https://github.com/nasgui">
+          <a target="_blank" href="https://github.com/nasgui">
             <FaGithub />
-          </Link>
-          <Link href="/">
+          </a>
+          <a target="_blank" href="/">
             <BiLinkExternal />
-          </Link>
+          </a>
           {/* <Link href="/projects/tales">
             <FiArrowRightCircle />
           </Link> */}

@@ -84,24 +84,30 @@ const DivProjectWrapper = styled.div`
       justify-content: flex-start;
       cursor: pointer;
 
-      svg {
-        padding-top: 2rem;
-        padding-right: 3rem;
-        fill: var(--darkPrimary);
-        height: 35px;
-        width: 35px;
-        align-self: flex-start;
-        transition: 0.3s;
-        border: none;
+      a {
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
 
-        @media screen and (max-width: 768px) {
-          height: 30px;
-          width: 30px;
-        }
-
-        &:hover {
+        svg {
+          padding-top: 2rem;
+          padding-right: 3rem;
+          fill: var(--darkPrimary);
+          height: 35px;
+          width: 35px;
+          align-self: flex-start;
           transition: 0.3s;
-          fill: #fff;
+          border: none;
+
+          @media screen and (max-width: 768px) {
+            height: 30px;
+            width: 30px;
+          }
+
+          &:hover {
+            transition: 0.3s;
+            fill: #fff;
+          }
         }
       }
     }
@@ -273,12 +279,12 @@ const Productivia = () => {
           <Image src="/assets/sloth.jpg" alt="sloth" layout="fill" />
         </div>
         <div className="div-svg">
-          <Link href="https://github.com/nasgui">
+          <a target="_blank" href="https://github.com/nasgui">
             <FaGithub />
-          </Link>
-          <Link href="/">
+          </a>
+          <a target="_blank" href="/">
             <BiLinkExternal />
-          </Link>
+          </a>
           {/* <Link href="/projects/productivia">
             <FiArrowRightCircle />
           </Link> */}
