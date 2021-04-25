@@ -40,24 +40,30 @@ const ContactWrapper = styled.section`
     flex: 1 1 1;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 460px;
     width: 100%;
 
+    @media screen and (max-width: 768px) {
+      height: 100%;
+    }
+
     img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       max-width: 100%;
-      max-height: 100%;
       object-fit: cover;
+      height: 460px;
       object-position: center center;
       border-right: 2px solid var(--darkPrimary);
+      border-left: 2px solid var(--darkPrimary);
 
       @media screen and (max-width: 768px) {
         position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
         border-right: none;
+        border-left: none;
         max-width: calc(100% + 4rem);
         border-bottom: 2px solid var(--darkPrimary);
       }
