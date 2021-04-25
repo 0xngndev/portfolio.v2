@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { useState } from "react";
 import styled from "styled-components";
+import { useState } from "react";
 
 const Title = styled.h1`
   color: var(--darkPrimary);
@@ -153,7 +152,7 @@ const Contact = () => {
       <Title>
         0.4.<span>Contact</span>
       </Title>
-      <ContactWrapper>
+      <ContactWrapper id="contact">
         <div className="div-img-left">
           <img src="/assets/mrceroilu.jpg" alt="message" />
         </div>

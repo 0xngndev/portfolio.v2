@@ -70,7 +70,7 @@ const AboutWrapper = styled.section`
 
 const About = () => {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="about">
       <h1>
         0.2.<span>About</span>
       </h1>

@@ -65,7 +65,7 @@ const ProjectsWrapper = styled.section`
 
 const Projects = () => {
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id="projects">
       <h1>
         0.3.<span>Projects</span>
       </h1>

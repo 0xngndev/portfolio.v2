@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/Gi";
 import { RiCloseFill } from "react-icons/ri";
-import Link from "next/link";
+import { Link, Link as LinkScroll } from "react-scroll";
 import { useState } from "react";
 
 const SidebarStyles = styled.div`
@@ -211,9 +211,18 @@ const Navbar = () => {
       ) : (
         <NavContainer>
           <div className="div-first-half">
-            <h3>
-              0.0.<span>G</span>
-            </h3>
+            <LinkScroll
+              style={{ textDecoration: "none" }}
+              spy={true}
+              to="hero"
+              duration={500}
+              smooth={true}
+              offset={-200}
+            >
+              <h3>
+                0.0.<span>G</span>
+              </h3>
+            </LinkScroll>
             <div></div>
             <a href="https://github.com/nasgui">
               <FaGithub />
@@ -226,28 +235,65 @@ const Navbar = () => {
             <GiHamburgerMenu onClick={() => setIsOpen(true)} />
             <ul>
               <li>
-                <h3 className="h1-first">
-                  0.1.
-                  <span>Home</span>
-                </h3>
+                <LinkScroll
+                  style={{ textDecoration: "none" }}
+                  spy={true}
+                  to="hero"
+                  duration={500}
+                  smooth={true}
+                  offset={-200}
+                >
+                  <h3 className="h1-first">
+                    0.1.
+                    <span>Home</span>
+                  </h3>
+                </LinkScroll>
               </li>
               <li>
-                <h3>
-                  0.2.
-                  <span>Projects</span>
-                </h3>
+                <LinkScroll
+                  style={{ textDecoration: "none" }}
+                  spy={true}
+                  to="about"
+                  duration={500}
+                  smooth={true}
+                  offset={-100}
+                >
+                  <h3>
+                    0.2.
+                    <span>About</span>
+                  </h3>
+                </LinkScroll>
               </li>
               <li>
-                <h3>
-                  0.3.
-                  <span>About</span>
-                </h3>
+                <LinkScroll
+                  style={{ textDecoration: "none" }}
+                  spy={true}
+                  to="projects"
+                  duration={500}
+                  smooth={true}
+                  offset={-100}
+                >
+                  <h3>
+                    0.3.
+                    <span>Projects</span>
+                  </h3>
+                </LinkScroll>
               </li>
+
               <li>
-                <h3>
-                  0.4.
-                  <span>Contact</span>
-                </h3>
+                <LinkScroll
+                  style={{ textDecoration: "none" }}
+                  spy={true}
+                  to="contact"
+                  duration={500}
+                  smooth={true}
+                  offset={-250}
+                >
+                  <h3>
+                    0.4.
+                    <span>Contact</span>
+                  </h3>
+                </LinkScroll>
               </li>
             </ul>
           </div>

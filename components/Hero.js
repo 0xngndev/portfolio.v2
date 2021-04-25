@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { Link as LinkScroll } from "react-scroll";
 
 const HeroWrapper = styled.div`
   display: flex;
@@ -149,7 +150,7 @@ const HeroWrapper = styled.div`
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="hero">
       <div className="div-hero-fh">
         <h1>
           0.1.<span>Hello</span> I'm Guido,
@@ -165,8 +166,27 @@ const Hero = () => {
           {`>`}
         </p>
         <div>
-          <button type="button">Projects</button>
-          <button type="button">About me</button>
+          <LinkScroll
+            style={{ textDecoration: "none" }}
+            spy={true}
+            to="projects"
+            duration={500}
+            smooth={true}
+            offset={-100}
+          >
+            <button type="button">Projects</button>
+          </LinkScroll>
+          <LinkScroll
+            style={{ textDecoration: "none" }}
+            spy={true}
+            to="about"
+            duration={500}
+            smooth={true}
+            offset={-100}
+          >
+            <button type="button">About me</button>
+          </LinkScroll>
+
           <button type="button">Resume</button>
         </div>
       </div>
