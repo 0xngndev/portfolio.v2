@@ -186,8 +186,14 @@ const Hero = () => {
           >
             <button type="button">About me</button>
           </LinkScroll>
-
-          <button type="button">Resume</button>
+          <a
+            style={{ textDecoration: "none" }}
+            href="/assets/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button type="button">Resume</button>
+          </a>
         </div>
       </div>
       <div className="div-hero-sh">
