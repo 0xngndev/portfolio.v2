@@ -276,7 +276,11 @@ const Productivia = () => {
       </div>
       <div className="div-projects-fh">
         <div className="div-img">
-          <Image src="/assets/sloth.jpg" alt="sloth" layout="fill" />
+          <Image
+            src="/assets/Productivia.jpg"
+            alt="Productivia"
+            layout="fill"
+          />
         </div>
         <div className="div-svg">
           <a target="_blank" href="https://github.com/nasgui">

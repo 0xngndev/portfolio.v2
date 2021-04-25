@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/Gi";
 import { RiCloseFill } from "react-icons/ri";
-import { Link, Link as LinkScroll } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
 import { useState } from "react";
 
 const SidebarStyles = styled.div`
@@ -183,28 +183,64 @@ const Navbar = () => {
           <RiCloseFill onClick={() => setIsOpen(false)} />
           <ul>
             <li>
-              <h3 className="h1-first">
-                0.1.
-                <span>Home</span>
-              </h3>
+              <LinkScroll
+                style={{ textDecoration: "none" }}
+                spy={true}
+                to="hero"
+                duration={500}
+                smooth={true}
+                offset={-200}
+              >
+                <h3 onClick={() => setIsOpen(false)} className="h1-first">
+                  0.1.
+                  <span onClick={() => setIsOpen(false)}>Home</span>
+                </h3>
+              </LinkScroll>
             </li>
             <li>
-              <h3>
-                0.2.
-                <span>Projects</span>
-              </h3>
+              <LinkScroll
+                style={{ textDecoration: "none" }}
+                spy={true}
+                to="about"
+                duration={500}
+                smooth={true}
+                offset={-100}
+              >
+                <h3 onClick={() => setIsOpen(false)}>
+                  0.2.
+                  <span onClick={() => setIsOpen(false)}>Projects</span>
+                </h3>
+              </LinkScroll>
             </li>
             <li>
-              <h3>
-                0.3.
-                <span>About</span>
-              </h3>
+              <LinkScroll
+                style={{ textDecoration: "none" }}
+                spy={true}
+                to="about"
+                duration={500}
+                smooth={true}
+                offset={-100}
+              >
+                <h3 onClick={() => setIsOpen(false)}>
+                  0.3.
+                  <span onClick={() => setIsOpen(false)}>About</span>
+                </h3>
+              </LinkScroll>
             </li>
             <li>
-              <h3>
-                0.4.
-                <span>Contact</span>
-              </h3>
+              <LinkScroll
+                style={{ textDecoration: "none" }}
+                spy={true}
+                to="contact"
+                duration={500}
+                smooth={true}
+                offset={-250}
+              >
+                <h3 onClick={() => setIsOpen(false)}>
+                  0.4.
+                  <span onClick={() => setIsOpen(false)}>Contact</span>
+                </h3>
+              </LinkScroll>
             </li>
           </ul>
         </SidebarStyles>
